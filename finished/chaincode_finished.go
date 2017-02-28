@@ -28,6 +28,7 @@ type SimpleChaincode struct {
 }
 
 func main() {
+	fmt.Printf("Welcome to my first block chain program")
 	err := shim.Start(new(SimpleChaincode))
 	if err != nil {
 		fmt.Printf("Error starting Simple chaincode: %s", err)
